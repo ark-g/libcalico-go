@@ -155,6 +155,7 @@ type FelixConfigurationSpec struct {
 	// from workloads after processing workload endpoint egress policy. [Default: Drop]
 	DefaultEndpointToHostAction string `json:"defaultEndpointToHostAction,omitempty" validate:"omitempty,dropAcceptReturn"`
 	IptablesFilterAllowAction   string `json:"iptablesFilterAllowAction,omitempty" validate:"omitempty,acceptReturn"`
+	IptablesFilterLastAction    string `json:"iptablesFilterLastAction,omitempty" validate:"omitempty,dropAcceptReturn"`
 	IptablesMangleAllowAction   string `json:"iptablesMangleAllowAction,omitempty" validate:"omitempty,acceptReturn"`
 	// LogPrefix is the log prefix that Felix uses when rendering LOG rules. [Default: calico-packet]
 	LogPrefix string `json:"logPrefix,omitempty"`

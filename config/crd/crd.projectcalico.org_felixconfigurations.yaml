@@ -278,6 +278,8 @@ spec:
                 type: string
               iptablesFilterAllowAction:
                 type: string
+              iptablesFilterLastAction:
+                type: string
               iptablesLockFilePath:
                 description: 'IptablesLockFilePath is the location of the iptables
                   lock file. You may need to change this if the lock file is not in

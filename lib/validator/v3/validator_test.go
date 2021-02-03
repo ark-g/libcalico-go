@@ -573,6 +573,7 @@ func init() {
 		Entry("should accept a valid DefaultEndpointToHostAction value", api.FelixConfigurationSpec{DefaultEndpointToHostAction: "Drop"}, true),
 		Entry("should reject an invalid DefaultEndpointToHostAction value 'drop' (lower case)", api.FelixConfigurationSpec{DefaultEndpointToHostAction: "drop"}, false),
 		Entry("should accept a valid IptablesFilterAllowAction value 'Accept'", api.FelixConfigurationSpec{IptablesFilterAllowAction: "Accept"}, true),
+		Entry("should accept a valid IptablesFilterLastAction value 'Accept'", api.FelixConfigurationSpec{IptablesFilterLastAction: "Accept"}, true),
 		Entry("should accept a valid IptablesMangleAllowAction value 'Return'", api.FelixConfigurationSpec{IptablesMangleAllowAction: "Return"}, true),
 		Entry("should reject an invalid IptablesMangleAllowAction value 'Drop'", api.FelixConfigurationSpec{IptablesMangleAllowAction: "Drop"}, false),
 		Entry("should accept a valid KubeNodePortRanges value", api.FelixConfigurationSpec{KubeNodePortRanges: &[]numorstring.Port{
